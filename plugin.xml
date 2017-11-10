@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  id="cordova-plugin-osx-utils"
+  version="1.0.0">
+
+  <name>Osx Utilities</name>
+  <description>Provides many Osx utility functions to a cordova app</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,osx,utility</keywords>
+
+	<engines>
+	    <engine name="cordova" version=">=7.0.0" />
+	    <engine name="cordova-osx" version=">=4.0.0" />
+	</engines>
+
+  <js-module src="www/osxUtils.js" name="OsxUtils">
+    <merges target="navigator.app" />
+  </js-module>
+
+  <!-- osx -->
+  <platform name="osx">
+    <config-file target="config.xml" parent="/*">
+       <feature name="OsxUtils">
+          <param name="osx-package" value="OsxUtils" />
+       </feature>
+    </config-file>
+    <source-file src="src/osx/OsxUtils.swift" compiler-flags="-fno-objc-arc" />
+  </platform>
+</plugin>

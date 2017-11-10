@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-osx-utils",
+  "version": "1.0.0",
+  "description": "Provides many Osx utility functions to a cordova app",
+  "author": "Nonostante Games",
+  "license": "Apache 2.0",
+  "types": "./typings/cordova-plugin-osx-utils.d.ts",
+  "cordova": {
+    "id": "cordova-plugin-osx-utils",
+    "platforms": [
+      "osx"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nonostante/cordova-plugin-osx-utils.git"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-osx"
+  ],
+  "bugs": {
+    "url": "https://github.com/Nonostante/cordova-plugin-osx-utils/issues"
+  },
+  "homepage": "https://github.com/Nonostante/cordova-plugin-osx-utils#readme"
+}
